@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #9be495;
+    color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-button:last-child {
+    border-bottom: none;
+}
+
+.accordion-button:hover {
+    background-color: #346b32;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 5px rgba(115, 255, 0, 0.5);
+}
+
+.accordion-content {
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    padding: 0 20px 0;
+}
+
+.accordion-content p {
+    padding: 20px 0;
+    margin: 0; /* Remove default margin */
+    border-top: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+    transform: rotate(-180deg);
+}

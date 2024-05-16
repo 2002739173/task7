@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Dark/Light Mode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0;
+            padding: 20px;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #f1f1f1;
+        }
+        .light-mode {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        .mode-toggle {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* Adjusted to move the icon to the right */
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .container {
+            margin-top: 50px; /* Adjust based on your design needs */
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="mode-toggle" onclick="toggleMode()">&#9790;</div> <!-- Moon icon on the right -->
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur ratione quisquam voluptatibus sequi dolorum sapiente unde temporibus enim beatae.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
